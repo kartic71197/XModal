@@ -38,7 +38,7 @@ function App() {
       <button onClick={() => setShowModal(true)}>Open Form</button>
       {showModal && (
         <Modal onClose={() => setShowModal(false)}>
-          <div>
+          <form>
             <h1>Fill details</h1>
             <label htmlFor="username">Username:</label>
             <input type="text" id="username" />
@@ -55,7 +55,7 @@ function App() {
             <button className="submit-button" onClick={handleSubmit}>
               Submit
             </button>
-          </div>
+          </form>
         </Modal>
       )}
     </>
