@@ -11,23 +11,6 @@ function App() {
     const phone = document.getElementById("phone").value.trim();
     const dob = document.getElementById("dob").value;
 
-    if (!username) {
-      alert("Please fill out the username field.");
-      return;
-    }
-    if (!email) {
-      alert("Please fill out the email field.");
-      return;
-    }
-    if (!phone) {
-      alert("Please fill out the phone number field.");
-      return;
-    }
-    if (!dob) {
-      alert("Please fill out the date of birth field.");
-      return;
-    }
-
     if (!email.includes("@")) {
       alert("Invalid email. Please check your email address.");
       return;
